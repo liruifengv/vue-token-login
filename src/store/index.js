@@ -9,12 +9,12 @@ Vue.use(Vuex)
 
 const state = {
   token: window.localStorage.getItem('token'),
-  userInfo: {}
+  userInfo: {},
+  loginStatus: false
 }
 
 export default new Vuex.Store({
   state,
   mutations,
-  actions,
-  loginStatus: false
+  actions
 })

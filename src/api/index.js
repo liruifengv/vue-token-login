@@ -17,7 +17,6 @@ instance.interceptors.response.use(
     if (error.response) {
       switch (error.response.status) {
         case 401:
-          console.log(error.response.data)
           router.replace({
             path: 'login',
             query: { redirect: router.currentRoute.fullPath } // 将跳转的路由path作为参数，登录成功后跳转到该路由
